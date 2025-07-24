@@ -1,0 +1,20 @@
+services:
+  backend:
+    build:
+      context: ./backend
+    command: poetry run uvicorn src.main:app --host 0.0.0.0 --port 8000
+    volumes:
+      - ./backend:/app
+    ports:
+      - "8000:8000"
+
+  frontend:
+    build:
+      context: ./frontend
+    command: poetry run python -m src.app
+    volumes:
+      - ./frontend:/app
+    ports:
+      - "8050:8050"
+    depends_on:
+      - backend

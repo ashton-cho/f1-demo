@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.pkl
+*.h5
+*.sqlite3
+.env
+.DS_Store
+# VSCode settings
+.vscode/
+# Jupyter
+.ipynb_checkpoints/
