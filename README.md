@@ -82,7 +82,7 @@ Go to http://localhost:8050 in your browser.
 
 ## Adding Your Own Data
 
-Place new F1 session data (in the same JSON format) in backend/demo_data/.
+Pull raw session data for selected year and event with backend/demo_data/data_pull.py.
 
 ---
 
